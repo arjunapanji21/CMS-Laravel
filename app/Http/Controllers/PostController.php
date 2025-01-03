@@ -12,7 +12,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.posts', [
+            'pageTitle' => 'Posts',
+        ]);
     }
 
     /**
@@ -36,7 +38,9 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('guest.post_show', [
+            'pageTitle' => 'Post Detail'
+        ]);
     }
 
     /**

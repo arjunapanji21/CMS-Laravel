@@ -13,11 +13,15 @@ Route::get('/', [GuestController::class, 'home'])->name('guest.home');
 
 // Authentication route
 Route::get('/login', [GuestController::class, 'login'])->name('guest.login');
+Route::get('/logout', [GuestController::class, 'logout'])->name('guest.logout');
 Route::post('/login/auth', [GuestController::class, 'login_auth'])->name('guest.login_auth');
 Route::get('/register', [GuestController::class, 'register'])->name('guest.register');
 Route::post('/register/store', [GuestController::class, 'register_store'])->name('guest.register_store');
 Route::get('/forgot-password', [GuestController::class, 'forgot_password'])->name('guest.forgot_password');
 Route::post('/reset-password', [GuestController::class, 'reset_password'])->name('guest.reset_password');
+
+// Blog route
+Route::get('/blog/{slug}', [GuestController::class, 'blog_show'])->name('guest.blog_show');
 
 Route::middleware(['auth'])->prefix('admin')->group(function(){
     // Dashboard route
