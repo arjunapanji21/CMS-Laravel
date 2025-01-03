@@ -268,7 +268,7 @@
             <a href="#" class="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-100 dark:text-white">
                 CMS Laravel    
             </a>
-            <span class="block text-sm text-center text-gray-100 dark:text-white">© 2024-{{date('Y')}} Developed by <a href="#" class="underline hover:no-underline">arjunaprakarsa.com</a>. All Rights Reserved.
+            <span class="block text-sm text-center text-gray-100 dark:text-white">© 2024-{{date('Y')}} Developed by <a href="https://arjunaprakarsa.com" class="underline hover:no-underline">arjunaprakarsa.com</a>. All Rights Reserved.
             </span>
             <ul class="flex justify-center mt-5 space-x-5">
                 <li>

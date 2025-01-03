@@ -13,9 +13,15 @@ class GuestController extends Controller
         ]);
     }
 
-    public function blog_show($slug){
+    public function posts(){
+        return view('guest.posts', [
+            'pageTitle' => 'Blog',
+        ]);
+    }
+
+    public function post_show($slug){
         return view('guest.post_show', [
-            'pageTitle' => 'Blog Detail',
+            'pageTitle' => 'Post Detail',
         ]);
     }
 

@@ -21,7 +21,8 @@ Route::get('/forgot-password', [GuestController::class, 'forgot_password'])->nam
 Route::post('/reset-password', [GuestController::class, 'reset_password'])->name('guest.reset_password');
 
 // Blog route
-Route::get('/blog/{slug}', [GuestController::class, 'blog_show'])->name('guest.blog_show');
+Route::get('/blog/', [GuestController::class, 'posts'])->name('guest.posts');
+Route::get('/blog/{slug}', [GuestController::class, 'post_show'])->name('guest.post_show');
 
 Route::middleware(['auth'])->prefix('admin')->group(function(){
     // Dashboard route

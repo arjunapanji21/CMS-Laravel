@@ -58,5 +58,6 @@ export default {
         require('flowbite/plugin')({
             datatables: true,
         }),
+        require('flowbite-typography'),
     ],
 };
